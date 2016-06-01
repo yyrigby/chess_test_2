@@ -12,9 +12,9 @@
 
 </head>
 <body>
-<div id="my_buttons">
+<!-- <div id="my_buttons">
     <button id="my_save_button">Save</button>
-</div>
+</div> -->
 
 <div id="board"></div>
 <script>
@@ -43,7 +43,7 @@
             window.location.reload(true);
         });
 
-        $("#my_save_button").click(function() {
+        $("#boardButtonsave").click(function() {
             $.post("/games/update_game", { pgn: pgnData[1], game_id: game_id }, function(event) {
                 console.log(event);
             });
