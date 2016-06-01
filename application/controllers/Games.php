@@ -2,11 +2,11 @@
 
 class Games extends CI_Controller {
 
-	public function __construct() {
-		parent::__construct();
-		$this->load->library('session');
-		$this->load->model('game');
-	}
+	// public function __construct() {
+	// 	parent::__construct();
+	// 	$this->load->library('session');
+	// 	$this->load->model('game');
+	// }
 
 	// grabs the user's games from the database and loads them to the my_games
 	public function my_games()
